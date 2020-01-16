@@ -1,0 +1,28 @@
+
+
+    <h1 class="h1-login">Registrarse</h1>
+        <div class="login-formulario">
+            <form action="/user" method="POST">
+                <div class="form-group dd">
+                    <label class="label-login">Nombre</label class="label-login">
+                    <input type="text" class="form-control" placeholder="Nombre" name="name">
+                </div>
+                <div class="form-group dd">
+                    <label class="label-login">Email</label>
+                    <input type="text" class="form-control" placeholder="Email" name="email">
+                </div>
+                <div class="form-group dd">
+                    <label class="label-login">Password</label>
+                    <input type="password" class="form-control" placeholder="Password" name="password">
+                </div>
+                <button type="submit"  class="btn btn-secondary button-login" id="register">Registrarse</button>
+            </form>
+            <button class="btn  button-login" id="login">Iniciar Sesion</button>
+        </div>
+</div>
+<script>
+    const login = document.getElementById('login')
+    login.addEventListener('click',()=>{
+        location = '/loginInterfaz'
+    })
+</script>

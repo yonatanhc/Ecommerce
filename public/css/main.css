@@ -1,0 +1,31 @@
+.bg{
+    background-color: #E8E7E0;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+.bt0{
+    margin: 0 0 0 250px;
+}
+
+
+.bt2{
+    margin: 0 0 0 200px;
+}
+
+.bt3,.bt4{
+    margin: 0 0 0 50px;
+}
+
+.pp{
+    background-color: #D0D3D4 ;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 50px 0px 0px 0px;
+}
+
+.oculto{
+    display: none;
+}

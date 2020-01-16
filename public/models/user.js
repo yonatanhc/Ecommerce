@@ -1,0 +1,38 @@
+
+const mongoose = require('mongoose')
+
+const userSchema = new mongoose.Schema({
+    name:{
+        type: String,
+        required: true
+    },
+    isCustomer: Boolean,
+    email: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    password: {
+        type: String,
+        required: true
+    },
+    cart:[{
+    
+            id : String,
+            title : String,
+            price :Number,
+            img : String
+       
+    }],
+    total:{
+        type: Number
+    },
+    isAdmin: Boolean,
+    role: String,
+    date: {type:Date, default:Date.now}
+
+})
+
+const User = mongoose.model('user', userSchema)
+
+module.exports = User

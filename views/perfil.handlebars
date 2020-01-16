@@ -1,0 +1,29 @@
+<div class="datos-perfil">
+    <h1>Bienvenido {{user.name}}</h1>
+    
+</div>
+<br>
+<br>
+<div><h1>Carrito</h1></div>
+<div class="cart" id="cart">
+    {{#each user.cart}}
+        <div class="cart-product" id="{{this.id}}">
+            <div class="imagen">
+                <img src="{{this.img}}" alt="">
+            </div>
+            <div class="caract">
+                <p>{{this.title}}</p>
+                <p>Precio: $ {{this.price}}</p>
+            </div>
+            <button class="delete" onclick="eliminar('{{this.id}}')">eliminar</button>     
+        </div>
+    {{/each}}
+</div>
+<div class="total">
+    <div class="total-text">Total:</div>
+    <div class="total-price"> $ {{user.total}}</div>
+</div>
+<button class="pay">Comprar</button>  
+
+
+<script src="js/perfil.js"></script>

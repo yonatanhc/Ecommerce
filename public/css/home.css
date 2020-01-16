@@ -1,0 +1,39 @@
+
+ .carousel-item img {
+    width: 900px;
+    height: 500px;
+    
+}
+
+.carousel-item,.carousel-inner{
+    width: 900px;
+    height: 500px;
+}
+
+.carl{
+    width: 900px;
+    height: 500px;
+    margin: 50px 0px 50px 180px;
+    box-shadow: 1px 3px 5px rgba(0,0,0, .5);
+}
+
+
+.barra-navegacion{
+    width: 900px;
+    height: 100px;
+    margin: 50px 0px 0px 200px;
+}
+.barra-navegacion div{
+    width: 150px;
+    height: 70px;
+    float: left;
+    margin: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.barra-navegacion img {
+    width: 150px;
+    height: 70px;
+    border-radius: 25px;
+    box-shadow: 1px 3px 5px rgba(0,0,0, .5);
+}

@@ -1,0 +1,14 @@
+{{#each result}}
+<div class="product" id="product" >
+    <img class="img-product" src="{{this.thumbnail}}" id="imagen" width="200px" height="250px" onclick="product('{{this.id}}')">
+    <div class="features">
+        <p>{{this.title}}</p>
+    </div> 
+    <div class="price">
+        <p> $ {{this.price}}</p> 
+    </div>
+    <button class="cars" onclick="cart('{{this.id}}')">Agregar al carrito</button>
+</div> 
+{{/each}}
+
+<script src="js/search.js"></script>
