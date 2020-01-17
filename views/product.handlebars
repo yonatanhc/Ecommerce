@@ -24,7 +24,13 @@
                 <button  class="button-chat">enviar</button>
         </div>
 
-        <div class="ventana-chat" id="ventana-chat"></div> 
+        <div class="ventana-chat" id="ventana-chat">
+                {{#each comments}}
+                <div class="comments">
+                        <p>{{this.content}}</p>
+                </div>
+                {{/each}}
+        </div> 
 </div>
 
 

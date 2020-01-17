@@ -37,3 +37,22 @@
     border-radius: 25px;
     box-shadow: 1px 3px 5px rgba(0,0,0, .5);
 }
+
+.contenido div{
+    margin: 20px;
+    float: left;
+    width: 600px;
+    height: 300px;
+    box-shadow: 1px 3px 5px rgba(0,0,0, .5);
+}
+
+.contenido img {
+    height: 200px;
+    margin: 30px 0px 0px 100px;
+    cursor: pointer;
+}
+
+.contenido h3{
+    font-weight: bold;
+   margin: 0px 0px 0px 200px;
+}

@@ -11,8 +11,10 @@ router.get('/search',async (req,res)=>{
 
 router.get('/product',async (req,res)=>{
     var result = await searchId(req.query.id)
+    var comments = await searchComments(req.query.id)
     res.render('product',{
-        product: result
+        product: result,
+        comments : comments
     })
     
 })
@@ -38,6 +40,15 @@ function searchId(data){
     })
 }
 
+function searchComments(data){
+    return new Promise(function(resolve,reject){
+        var meliObject = new meli.Meli(5269024433415053,"Fd9Vaj79omHDucoIq56AnYB1eOWes2OD");
+        meliObject.getAuthURL("https://localhost:3000") 
+        meliObject.get('/reviews/item/'+data,function(err, resp) {
+            resolve(resp.reviews) 
+        })
+    })
+}
 
 
 module.exports = router
